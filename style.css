@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=DynaPuff:wght@400..700&family=SUSE:wght@100..800&display=swap');
+
+/* reset css, para iniciar!*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url('assets/Casa_pastel.jpeg'); /* Caminho da sua imagem */
+    background-size: cover;         /* Ajusta para cobrir toda a tela */
+    background-repeat: no-repeat;   /* Evita repetição da imagem */
+    background-position: center;    /* Centraliza a imagem */
+    color: black;
+
+}
+
+html{
+
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+
+    list-style: none;
+}
+
+
+/* estilização*/
+
+nav{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: DynaPuff;
+    font-size: 3rem;
+    font-weight:600;
+    color:#D97145;
+    text-transform: uppercase;
+}
+
+.menu{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color:#cf815f;
+    font-family: SUSE;
+}
+
+.Github{
+
+    font-weight: 800;
+    color: #cf815f;
+    font-family: SUSE;
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.principal{
+    background-color: #FDDAC1;
+
+}
+
+.hero{
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Mudado para center */
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    gap: 6rem;
+    padding: 0rem 2rem;
+    overflow: clip;
+    margin: 0 auto; /* Adicionado para centralizar o container */
+}
+
+.hero-Conteudo{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+.destaque{
+
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #eba98d;
+}
+
+
+
+h1{
+    font-family: Amaranth; 
+    font-size:3rem;
+    font-weight: 800;
+    color: #D97145;
+
+}
+
+hr{
+
+    border-color: #e4a184;
+
+}
+
+.hero-subtitulo{
+    font-family: Amaranth;
+    font-size: 1.5rem;
+    font-family: 500;
+    color: #cf815f;
+
+}
+
+.hero-img-container{
+
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+    margin: auto;
+}
+
+.hero-img-container > figure > img{
+
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.botao-container{
+
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0,-50%");
+}
+
+button{
+    border: none;
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    background-color: #e7b692;
+}
+
+.Receitas{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.cabeçalho-receitas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titulos-receita{
+    font-family: Amaranth;
+    font-size: 2rem;
+    font-family: 500;
+    color: #D97145;
+
+}
+
+.receitas-subtitulo{
+    font-family: SUSE;
+    color: #cf815f;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.receitas-card-container{
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para uma nova linha */
+    gap: 2rem; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards no contêiner */
+}
+
+
+.card{
+
+    background-color: #F2CFC0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: calc(50% - 1rem); /* Cada card ocupa 50% da largura do contêiner menos a margem */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+
+}
+
+.receitas-card-cabeçalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receita-card-cabeçalho-detalhes{
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.receita-titulo{
+    font-family: Amaranth;
+    font-size: 1.5rem;
+    font-family: 500;
+    color: #ac7158;
+
+}
+
+.avaliacao{
+    font-family: SUSE;
+    color:#ac7158;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.descricao-avaliacao{
+    font-family: SUSE;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.receita-autor{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.receita-autor > img{
+
+    border-radius: 5rem;
+    width: 1.5rem;
+}
+
+.receitas-autor-nome{
+    font-family: SUSE;
+    color: #ac7158;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+footer{
+
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color:#ECD2C6 ;
+
+}
+
+.footer-copy{
+    font-family: SUSE;
+    color: #D97145;;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.footer-amor{
+    font-family: SUSE;
+    color: #D97145;;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
